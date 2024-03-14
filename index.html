@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak Gym</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="navbar">
+
+            <img src="logo.png" alt="not loaded" id="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Services</a></li>
+                <li><button class="btn">LogIn</button></li>
+            </ul>
+            <div class="nav-toggle">
+                <img src="threelinesgym.png" alt="Home" id="homeimg">
+                <span></span>
+            </div>
+    </nav>
+    <section class="primary-section">
+        <div class="section-1">
+            <h1>Join our Gym Now</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus dignissimos minus laborum dolore repellendus architecto molestias inventore suscipit maxime maiores, quidem tempore fuga amet quos, illo debitis obcaecati, iure dolor esse blanditiis similique qui? Omnis voluptates dolore, harum cum possimus maxime, iste odio nesciunt, placeat corporis minus voluptatum rerum!</p>
+            <button class="joinbtn">Join us</button>
+        </div>        
+    </section>
+    <section class="blog-section">
+        <div class="section-2">
+            <div class="blog">
+                <img src="gymbg.jpg" alt="not loaded">
+                <div>
+                    <h2>Personal Training</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores et voluptate voluptates at, enim repudiandae laborum molestiae unde iure mollitia quo est, alias quia. Accusamus consequatur sit tempora delectus maxime consequuntur eveniet nemo, atque quam, nihil quaerat nostrum officiis enim temporibus explicabo eum fugiat?</p>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="yoga.jpg" alt="not loaded">
+                <div>
+                    <h2>Yoga Classes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores et voluptate voluptates at, enim repudiandae laborum molestiae unde iure mollitia quo est, alias quia. Accusamus consequatur sit tempora delectus maxime consequuntur eveniet nemo, atque quam, nihil quaerat nostrum officiis enim temporibus explicabo eum fugiat?</p>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="gymboy.jpg" alt="not loaded">
+                <div>
+                    <h2>Advance diet plan</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores et voluptate voluptates at, enim repudiandae laborum molestiae unde iure mollitia quo est, alias quia. Accusamus consequatur sit tempora delectus maxime consequuntur eveniet nemo, atque quam, nihil quaerat nostrum officiis enim temporibus explicabo eum fugiat?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="section-3">
+            <h1>Register Now</h1>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="mail" id="mail"
+            placeholder="Enter your email">
+            <input type="password" name="pass" id="pass"
+            placeholder="Enter password">
+            <input type="password" name="cpass" id="cpass"
+            placeholder="Confirm password">
+            <button class="btn">Register</button>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="section-4">
+            <h2>CONTACT US</h2>
+            <div class="box">
+                <img src="favfacebook.png" alt="notloaded">
+                <img src="favgoogle.png" alt="notloaded">
+                <img src="favinsta.png" alt="notloaded">
+                <img src="favtwitter.png" alt="notloaded">
+            </div>
+            <p>Copyright &#169 All rights are reserved</p>
+        </div>
+    </footer>
+    <script>
+        let a = document.getElementById('homeimg');
+        let n = document.querySelector('ul');
+        a.addEventListener('click',()=>{
+            if(n.style.display == 'none'){
+                n.style.display = 'block';
+                document.querySelector('span').append(n)
+            }else{
+                n.style.display = 'none';
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.677);
+}
+#homeimg{
+    height: 30px;
+    width: 30px;
+}
+.nav-toggle{
+    display: none;
+}
+#logo{
+    width:70px;
+    height: 70px;
+    border-radius: 50px;
+    filter: invert(100%);
+}
+#navbar ul{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width:95px;
+    height:35px;
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border:2px solid white;
+}
+
+.primary-section::before{
+    content:"";
+    position: absolute;
+    background: url(gymblank.jpg)no-repeat center center/cover;;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.primary-section{
+    position: relative;
+    width:100vw;
+    height: 100vh;
+    display:flex;
+}
+.section-1{
+    margin-top: 100px;
+    margin-left: 15px;
+    /* border: 4px solid white; */
+    color: white;
+    width:750px;
+    height: 250px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+.joinbtn{
+    width:95px;
+    background-color: black;
+    height: 40px;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+}
+.joinbtn:hover{
+    background-color: white;
+    color: black;
+    border:2px solid;
+}
+#navbar ul{
+    display: flex;
+}
+.section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog-section{
+    position: relative;
+}
+.blog-section::before{
+    content:"";
+    position: absolute;
+    background: url(background-gym.jpg)no-repeat center center/cover;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+} 
+.blog{
+    margin-top:70px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:450px;
+    height: 450px;   
+    margin:15px;
+    border-radius: 75px;
+    border: 2px solid black;
+}
+h1{
+    font-size: 40px;
+    /* color:white */
+}
+
+.blog div{
+    text-align: center;
+    font-size: 18px;
+    /* font-weight:600; */
+    /* color: white; */
+}
+.blog img{
+    width:190px;
+    height:190px;
+    border-radius: 40px;
+    border:4px solid white;
+    margin-top: 20px;
+}
+.contact-section{
+    position: relative;
+}
+.contact-section::before{
+    content:"";
+    position: absolute;
+    background: url(contactgym.jpg)no-repeat center center/cover;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+} 
+
+.section-3{
+    display:flex;
+    flex-direction: column;
+    border-radius: 75px;
+    justify-content: center;
+    /* width: 950px; */
+    height:420px;
+    /* margin: auto; */
+    align-items: center;
+}
+.section-3 input{
+    width:350px;
+    height: 40px;
+    margin:7px;
+    border:2px solid;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.footer-section{
+    background-color: rgba(0, 0, 0, 0.89);
+    /* border: 2px solid white; */
+}
+.section-4{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.box{
+    /* border: 2px solid white; */
+    width:200px;
+    display: flex;
+    justify-content: space-between;
+}
+.box img{
+    width: 30px;
+      height: 30px;
+}
+.section-4 p{
+    color: white;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width:950px){
+    .section-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog{
+        margin-top:60px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width:650px;
+        height: 250px;   
+        margin:15px;
+        border-radius: 75px;
+        border: 2px solid black;
+    }
+    .blog div{
+        text-align: center;
+        font-size: 18px;
+        /* font-weight:600; */
+        /* color: white; */
+    }
+    .blog img{
+        width:190px;
+        height:190px;
+        border-radius: 40px;
+        border:4px solid white;
+        margin-left: 30px;
+    }
+    #navbar ul{
+        display: flex;
+    }
+}
+@media screen and (max-width:650px){
+    .section-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog{
+        margin-top:60px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:350px;
+        height: 450px;   
+        margin:15px;
+        border-radius: 75px;
+        border: 2px solid black;
+    }
+    #navbar ul{
+        display: none;
+    }
+    .nav-toggle{
+        display:flex;
+        flex-direction: column;
+    }
+    span{
+        background-color: rgba(0, 0, 0, 0.711);
+        position:absolute;
+        top:10%;
+        right:15px;
+    }
+    #homeimg{
+        position: absolute;
+        top:3%;
+        right:4%;
+    }
+}
